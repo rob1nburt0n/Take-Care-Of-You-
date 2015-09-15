@@ -6,6 +6,11 @@ define([
     angular.module("CapstoneApp.genderCtrl", ['ngRoute'])
         .config(['$routeProvider', function($routeProvider) {
             $routeProvider
+             .when('/general', {
+                templateUrl: '../partials/general.html',
+                controller: 'fmCtrl',
+                controllerAs: 'generalCtrl'
+            })
             .when('/', {
                 templateUrl: '../partials/gender.html',
                 controller: 'fmCtrl',
