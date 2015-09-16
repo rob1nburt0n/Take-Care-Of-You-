@@ -5,7 +5,7 @@ require.config({
     angularFire: '../lib/bower_components/angularfire/dist/angularfire.min',
     firebase: '../lib/bower_components/firebase/firebase',
     jquery: '../lib/bower_components/jquery/dist/jquery.min',
-    bootstrap: '../lib/bower_components/bootstrap/dist/css/bootstrap.min',
+    bootstrap: '../lib/bower_components/bootstrap/dist/js/bootstrap',
     angularfilter: '../lib/bower_components/angularfilter/dist/angularfilter.min'
   },
   shim: {
@@ -18,7 +18,8 @@ require.config({
  
 require([
   'angular',
-  'app'
+  'app',
+  'bootstrap'
   ], function(angular, app) {
     var $html = angular.element(document.getElementsByTagName('body')[0]);
     angular.element($html).ready(function() {
