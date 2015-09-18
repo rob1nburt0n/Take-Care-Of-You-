@@ -4,15 +4,17 @@ define([
   'angularFire',
   'controllers/gender',
   'controllers/female',
-  'controllers/male'
+  'controllers/male',
+  'controllers/checklist'
 
-  ], function(angular, angularRoute, af, genderCtrl, femaleCtrl, maleCtrl) {
+  ], function(angular, angularRoute, af, genderCtrl, femaleCtrl, maleCtrl, checklistCtrl) {
     return angular.module("CapstoneApp", [
       'ngRoute',
       'firebase',
       'CapstoneApp.genderCtrl',
       'CapstoneApp.femaleCtrl',
-      'CapstoneApp.maleCtrl'
+      'CapstoneApp.maleCtrl',
+      'CapstoneApp.checklistCtrl'
 
       ]).
 

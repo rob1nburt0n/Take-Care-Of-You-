@@ -11,6 +11,11 @@ define([
                 controller: 'fmCtrl',
                 controllerAs: 'generalCtrl'
             })
+             .when('/signup', {
+                templateUrl: '../partials/additionalInfo.html',
+                controller: 'fmCtrl',
+                controllerAs: 'additionalInfoCtrl'
+            })
             .when('/female', {
                 templateUrl: '../partials/femaleSelect.html',
                 controller: 'fmCtrl',

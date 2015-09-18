@@ -1,9 +1,21 @@
 body {
-  background: lightyellow url("http://www.pptbackgrounds.net/uploads/heart-rhythms-powerpoint-backgrounds.jpg");
+  background: #ADC1CE url("http://i.stack.imgur.com/i4UJM.png");
   background-size: 100% 104%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 10px 30px;
+}
+
+.flexbox {
+  padding: 0;
+  margin-left: 5%;
+  list-style: none;
+  width: 90%;   
+  display: flex;
+  flex-flow: row wrap;
+  border: 7px double #ADC1CE;
+  border-radius: 8px;
+  background-color: #FCFCFC;
 }
 
 footer {
@@ -13,23 +25,28 @@ footer {
 
 .navbar {
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+ 
 }
 
 .home, .male, .female {
   margin-top: 70px;
+
+ 
 }
 
 #appTitle {
-  font-size: 54px;
+  font-size: 50px;
   font-family: Serif (red serifs);
-  margin-left: 110px;
+  margin-left: 1%;
   margin-top: 5px;
-  color: tomato;
+  color: #336699;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #subTitle {
-  margin-left: -90px;
+  margin-left: -80px;
   margin-top: 65px;
   font-size: 18px;
   font-family: Serif;
@@ -38,6 +55,7 @@ footer {
 
 h2, h3 {
   text-align: center;
+  margin-bottom: 3%;
 }
 
 button {
@@ -53,16 +71,14 @@ button {
 
 }
 article {
-  padding: 20px 0 30px 0;
-  background-color: #FFDABC;
-  margin: 5px 0 5px 0; 
+  padding: 20px 5px 30px 0;
+  background-color: #E6E6E6; 
   height: 550px;
   border-radius: 8px;
  
 }
 .float_right {
   float: right;
-  margin-right: 3%;
 }
 
 .generalImg {
@@ -74,9 +90,27 @@ article {
 }
 
  .navbar-default {
-    background-color: #FFF9BA;
+    background-color: #E6E6E6;
 }
 
 .navImg {
-  padding: 2%;
+  padding: 2% 1% 0 1%;
 }
+
+#contact {
+  margin-left: 30px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.partials {
+  margin: 0 5% 5% 5%;
+}
+
+input[type=checkbox] {
+
+}
+
+
+
+
