@@ -11,6 +11,16 @@ define([
                 controller: 'fmCtrl',
                 controllerAs: 'generalCtrl'
             })
+             .when('/bmi', {
+                templateUrl: '../partials/bmi.html',
+                controller: 'fmCtrl',
+                controllerAs: 'bmiCtrl'
+            })
+              .when('/about', {
+                templateUrl: '../partials/about.html',
+                controller: 'fmCtrl',
+                controllerAs: 'aboutCtrl'
+            })
              .when('/signup', {
                 templateUrl: '../partials/additionalInfo.html',
                 controller: 'fmCtrl',
@@ -31,3 +41,8 @@ define([
 
     }]);
 });
+
+function calcBMI() {
+  var weight = document.bmiform.pounds.value, height = document.bmiform.inches.value;
+  document.bmiform.bmi.value = parseInt((weight * 703) / (height * height));
+} 
