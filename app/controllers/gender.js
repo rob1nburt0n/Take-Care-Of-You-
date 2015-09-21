@@ -16,6 +16,11 @@ define([
                 controller: 'fmCtrl',
                 controllerAs: 'bmiCtrl'
             })
+               .when('/selfexam', {
+                templateUrl: '../partials/selfexam.html',
+                controller: 'fmCtrl',
+                controllerAs: 'selfexamCtrl'
+            })
               .when('/about', {
                 templateUrl: '../partials/about.html',
                 controller: 'fmCtrl',
