@@ -1,25 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nashville Software School</title>
     <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link type="style/css" rel="stylesheet" href="styles/main.css">
   </head>
-<div class="flexbox">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <body>
+<div class="container">
+<nav class="navbar navbar-default yamm">
+  <!-- <div class="container-fluid"> -->
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <img class="navImg" src="http://i.huffpost.com/gen/1581288/images/o-STETHOSCOPE-facebook.jpg" width="250" height="120">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-
+    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        
         <li class="home"><a href="#/">HOME <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
+        <li class="dropdown yamm-fw">
           <a href="/#/" class="dropdown-toggle home" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">MEN<span class="caret"></span></a>
            <ul class="dropdown-menu">
             <li><a href="#/male18">Male Age 18-29</a></li>
@@ -29,7 +38,7 @@
             <li><a href="#/male65">Male Age 65 +</a></li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="dropdown yamm-fw">
           <a href= "/#/" class="dropdown-toggle home" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#/female18">Female Age 18-29</a></li>
@@ -44,10 +53,11 @@
       </ul>
       
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  <!-- </div> --><!-- /.container-fluid -->
 </nav>
 
-<body>
+
+
 
 
   <div ng-view></div>
